@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -10,19 +11,18 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 
 const Index = () => {
   return (
-    <LanguageProvider>
-      <div className="min-h-screen bg-background text-foreground">
-        <LanguageToggle />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Services />
-        <Contact />
-        <Footer />
-      </div>
-    </LanguageProvider>
-  );
-};
+  <LanguageProvider>
+    <div>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Services />
+      <Contact />
+      <Footer />
+    </div>
+  </LanguageProvider>
+);
 
+}
 export default Index;
